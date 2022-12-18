@@ -195,11 +195,16 @@ ul{
     margin-bottom: 8px;
     width: 264px;
     height: 112px;
+    border-radius: 4px;
 }
 
 .advantages-icon{
     display: flex;
     align-items: center;
+    width: 64px;
+    height: 64px;
+    margin:24px 100px;
+    position: absolute;
 }
 /* .desc-list::before{
     display: block;
@@ -303,8 +308,72 @@ ul{
     margin-bottom: 72px;
 }
 
+.icon-networks{
+    display: flex;
+    margin-top: 8px;
+    
+}
 
+.networks-icon{
+    fill: #f4f4fd;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 16px;
+    height: 16px;
 
+}
+.networks{
+    background-color: var(--button-color);
+    justify-content: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+/* customers */
+.customers-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon-customers{
+    display: flex;
+
+}
+
+.customers{
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    object-position: center;
+    padding: 16px 32px;
+}
+.customers{
+    width: calc((100% - 72px) / 6);
+    margin-right: 24px; 
+}
+ 
+.customers:hover,
+.customers:focus{
+    color: var(--headline-title-color);
+    border: 1px solid var(--button-color);
+}
+
+.customers-icon:hover,
+.customers-icon:focus{
+    color: var(--headline-title-color);
+    
+}
+
+/* футер */
 .footer{
     background: var(--title-text-color);
     padding-top: 100px;
