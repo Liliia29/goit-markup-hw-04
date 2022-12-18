@@ -314,6 +314,7 @@ ul{
     
 }
 
+
 .networks-icon{
     fill: #f4f4fd;
     align-items: center;
@@ -337,6 +338,8 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: #8e8f99;
+    
     
 }
 
@@ -355,29 +358,38 @@ ul{
     object-fit: contain;
     object-position: center;
     padding: 16px 32px;
+    
 }
+
 .customers{
     width: calc((100% - 72px) / 6);
     margin-right: 24px; 
 }
- 
-.customers:hover,
-.customers:focus{
+
+.icon-customers a:hover,
+.icon-customers a:focus{
     color: var(--headline-title-color);
     border: 1px solid var(--button-color);
+    border-color: #4D5AE5;
 }
 
-.customers-icon:hover,
+
+
+
+
+/* .customers-icon:hover,
 .customers-icon:focus{
     color: var(--headline-title-color);
     
-}
+} */
+
 
 /* футер */
 .footer{
     background: var(--title-text-color);
     padding-top: 100px;
-    padding-bottom: 100px ;
+    padding-bottom: 100px;
+    
 }
 
 .footer .logo{
@@ -395,9 +407,34 @@ ul{
     font-size: 16px;
     line-height: 1.5;
     margin-top: 16px;
+    margin-right: 120px;
     margin-bottom: 0;
     width: 264px;
 }
+
+.social-media {
+    display: flex;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 16px;
+    margin: 0 0;
+}
+
+.media{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* кнопки */
+
 .button{
     color: var(--headline-title-color);
     background: var(--button-color);
