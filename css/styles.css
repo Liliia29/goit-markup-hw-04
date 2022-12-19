@@ -16,6 +16,8 @@
     --headline-title-color: #FFFFFF;
     --footer-logo-color: #F4F4FD;
     --subtle-backgrounds: #E7E9FC;
+    --icon-media--color:#31D0AA;
+    --icon--color:#8E8F99;
 }
 h2{
     margin-top: 0;
@@ -165,7 +167,6 @@ ul{
 
 .characteristic{
     padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .hidden{
@@ -228,9 +229,9 @@ ul{
     padding-bottom: 120px; 
 }
 
-.list-team li{
+/* .list-team li{
     width: calc((100% - 72px) / 4);
-}
+} */
 
 .desc-list{
     width: calc((100% - 72px) / 4);
@@ -298,6 +299,10 @@ ul{
     margin-right: 24px;
 }
 
+.list-shadow{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .list-team .title-our-team{
     color: var(--title-text-color);
     font-weight: 500;
@@ -315,18 +320,22 @@ ul{
 }
 
 
-.networks-icon{
+.networks a{
     fill: #f4f4fd;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
     width: 16px;
     height: 16px;
+    margin: 12px 12px;
+    position: absolute;
+    
+
 
 }
 .networks{
     background-color: var(--button-color);
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -338,51 +347,39 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #8e8f99;
+    fill: var(--icon--color);
     
-    
+}
+
+.work-icon{
+    fill: #8E8F99;
+    display: flex;
+    padding: 16px 32px;
+    border: 1px solid #8e8f99;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border-color: #8E8F99;  
+    justify-content: center;
+    align-items: center; 
 }
 
 .icon-customers{
     display: flex;
-
 }
 
 .customers{
-    width: 168px;
-    height: 88px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-    object-position: center;
-    padding: 16px 32px;
-    
-}
-
-.customers{
-    width: calc((100% - 72px) / 6);
+    width: calc((100% - 120px) / 6);
     margin-right: 24px; 
 }
 
-.icon-customers a:hover,
-.icon-customers a:focus{
-    color: var(--headline-title-color);
-    border: 1px solid var(--button-color);
-    border-color: #4D5AE5;
-}
-
-
-
-
-
-/* .customers-icon:hover,
+.customers .work-icon:hover,
+.customers .work-icon:focus,
+.customers-icon:hover,
 .customers-icon:focus{
-    color: var(--headline-title-color);
-    
-} */
-
+    border-color: #4D5AE5;
+    fill: var(--button-color);
+}
 
 /* футер */
 .footer{
@@ -433,6 +430,31 @@ ul{
     padding-right: 15px;
 }
 
+.networks {
+    margin-right: 16px;
+    
+}
+.icon-media{
+    background-color: var(--primary-text-color); 
+}
+
+.social-icon{
+    top: 8px;
+    left:8px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-networks .icon-media a{
+    width: 24px;
+    height: 24px;
+    margin: 8px 8px;  
+}
+
+.icon-media:hover,
+.icon-media:focus{
+   background-color: var(--icon-media--color); 
+}
 /* кнопки */
 
 .button{
@@ -487,7 +509,14 @@ ul{
 }
 
 .button:hover,
-.button:focus,
+.button:focus{
+    background: var(--active-states-color);
+    color: var(--headline-title-color);
+    border: 1px solid var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
 .button-primtary:hover,
 .button-primtary:focus, 
 .button-picture:hover,
@@ -495,6 +524,7 @@ ul{
     background: var(--active-states-color);
     color: var(--headline-title-color);
     border: 1px solid var(--button-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .container{
@@ -545,7 +575,7 @@ ul{
 .content-portfolio {
     background: #FFFFFF;
     border: 0.5px solid #F4F4FD;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
     padding: 32px 52px 32px 16px;
     padding-bottom: 32px;
 }
@@ -565,12 +595,16 @@ ul{
     text-align: left;
 }
 
-
 .text-portfolio{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 0px;
+}
+
+.element-portfolio:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 
