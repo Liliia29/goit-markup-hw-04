@@ -318,28 +318,20 @@ ul{
 }
 
 .content .icon-networks li:not(:last-child){
-    margin-right: 16px;
+    margin-right: 24px;
 }
 
-
-.networks a{
-    fill: #f4f4fd;
-    display: flex;
-    align-items: center;
-    width: 16px;
-    height: 16px;
-    margin: 12px 12px;
-    position: absolute;
-}
 
 .networks{
-    background-color: var(--button-color);
+    display: flex;
+     background-color: var(--button-color);
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
+
 
 /* customers */
 .customers-icon{
@@ -436,7 +428,7 @@ ul{
     width: 40px;
     height: 40px;
     display: flex; 
-    color: var(--icon-media--color); 
+   
 }
 
 .icon-media:hover,
